@@ -40,17 +40,19 @@
             const card = document.createElement('div');
             card.classList = "card card-compact "
             card.innerHTML = `
-            <figure>
+            <figure class="px-5 pt-10 h-[200px]">
                 <img
                 src="${pets.image}"
-                alt="Shoes" />
-                class="rounded-xl"
+                alt="Shoes"
+                class="rounded-xl h-full w-full object-cover" />
             </figure>
-            <div class="card-body">
-                <h2 class="card-title">Shoes!</h2>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title">${pets.breed}</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+                <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-primary">Adopt</button>
+                    <button class="btn btn-primary">Details</button>
                 </div>
             </div>
             `
