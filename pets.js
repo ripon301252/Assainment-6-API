@@ -21,7 +21,7 @@
             const button = document.createElement('button');
             button.classList = 'btn';
             button.innerText = item.category;
-            button.innerText = item.category_icon.('https://i.ibb.co.com/N7dM2K1/cat.png');
+          
 
             // add button to categoryContainer
             categoryContainer.append(button)
