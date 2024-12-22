@@ -12,10 +12,10 @@
     }
 
     // create displayCategories
-    const displayCategories = (category) =>{
+    const displayCategories = (categories) =>{
         const categoryContainer = document.getElementById('categories');
 
-        category.forEach((item) => {
+        categories.forEach((item) => {
             
             // create buttons
             const button = document.createElement('button');
