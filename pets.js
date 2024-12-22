@@ -44,6 +44,7 @@
                 <img
                 src="${pets.image}"
                 alt="Shoes" />
+                class="rounded-xl"
             </figure>
             <div class="card-body">
                 <h2 class="card-title">Shoes!</h2>
