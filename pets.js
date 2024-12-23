@@ -89,19 +89,19 @@
         
 
         
-    //     categories.forEach((item) => {
+         categories.forEach((item) => {
             
-    //         // create buttons
-    //         const button = document.createElement('button');
-    //         button.classList = 'btn';
-    //         button.innerText = item.category;
+             // create buttons
+             const button = document.createElement('button');
+             button.classList = 'btn';
+             button.innerText = item.category;
           
 
-    //         // add button to categoryContainer
-    //         categoryContainer.append(button)
+             // add button to categoryContainer
+             categoryContainer.append(button)
 
-    //     });
-    // }
+         });
+     }
 
     loadCategories()
     loadImages()
