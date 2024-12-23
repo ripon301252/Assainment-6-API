@@ -38,16 +38,16 @@
        pets.forEach(pets => {
             console.log(pets);
             const card = document.createElement('div');
-            card.classList = "card card-compact "
+            card.classList = "card card-compact bg-gray-50"
             card.innerHTML = `
-            <figure class="px-5 pt-10 h-[200px]">
+            <figure class="px-5 pt-10 h-[200px] ">
                 <img
                 src="${pets.image}"
                 alt="Shoes"
                 class="rounded-xl h-full w-full object-cover" />
             </figure>
-            <div class="card-body items-center text-center">
-                <h2 class="card-title">${pets.breed}</h2>
+            <div class=" items-center  ">
+                <h2 class="card-title">${pets.pet_name}</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div class="card-actions">
                     <button class="btn btn-primary">Buy Now</button>
