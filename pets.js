@@ -67,16 +67,41 @@
         categories.forEach((item) => {
             
             // create buttons
+            
             const button = document.createElement('button');
-            button.classList = 'btn';
+            // button.classList = 'btn';
             button.innerText = item.category;
+           
+            const image = document.createElement('div');
+            // image.classList = 'btn';
+            image.innerHTML = `
+             <figure class=" ">
+                <img
+                src="${item.category_icon}"
+                alt="Shoes"
+                class="rounded-xl w-10 object-cover " />
+            </figure> 
+            `
+            // add button to categoryContainer
+            categoryContainer.append(image, button);
+        });
+
+        
+
+        
+    //     categories.forEach((item) => {
+            
+    //         // create buttons
+    //         const button = document.createElement('button');
+    //         button.classList = 'btn';
+    //         button.innerText = item.category;
           
 
-            // add button to categoryContainer
-            categoryContainer.append(button)
+    //         // add button to categoryContainer
+    //         categoryContainer.append(button)
 
-        });
-    }
+    //     });
+    // }
 
     loadCategories()
     loadImages()
