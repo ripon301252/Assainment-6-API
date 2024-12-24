@@ -69,11 +69,11 @@
             // create buttons
             
             const button = document.createElement('button');
-            button.classList = 'btn';
+            
             button.innerText = item.category;
            
             const image = document.createElement('div');
-            image.classList = 'btn';
+            
             image.innerHTML = `
              <figure class=" ">
                 <img
@@ -89,19 +89,7 @@
         
 
         
-         categories.forEach((item) => {
+        
             
-             // create buttons
-             const button = document.createElement('button');
-             button.classList = 'btn';
-             button.innerText = item.category;
-          
-
-             // add button to categoryContainer
-             categoryContainer.append(button)
-
-         });
-     }
-
     loadCategories()
     loadImages()
